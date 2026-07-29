@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Servers — Wave Hosting</title>
+    <meta content="One-click game server hosting from Wave Hosting. Minecraft, FiveM, Garry's Mod, ARK, Rust and more with crash detection and instant scaling." name="description">
+    <style>
+        /* Per-game orb logos. background-color is the real fallback if an image is missing. */
+        .game-orb { background-size: cover; background-position: center; background-repeat: no-repeat; }
+        .orb-minecraft { background-image: url('minecraft.jpg'); background-color: #4c7a2f; }
+        .orb-fivem     { background-image: url('fivem.png');     background-color: #1c1c1c; }
+        .orb-gmod      { background-image: url('gmod.png');      background-color: #2472a8; }
+        .orb-ark       { background-image: url('ark.png');       background-color: #3a4a26; }
+        .orb-rust      { background-image: url('rust.png');      background-color: #7a2c1c; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="brand" href="index.html">
+            <span style="display:inline-block; position:relative; top:0px;"><img src="logo.png" alt="Wave Hosting logo" style="width:26px; height:26px; vertical-align:middle;"></span>
+            Wave Hosting
+        </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">≡</button>
+        <ul class="nav-links" id="navlinks">
+            <li><a href="index.html">Home</a></li>
+          <!--  <li><a href="dedicated.html">Dedicated</a></li> -->
+            <li><a href="vps.html">VPS</a></li>
+            <li><a href="games.html" class="active">Games</a></li>
+            <li><a href="https://my.wavehost.org" class="nav-cta">Billing panel <span>&rarr;</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="wrap">
+        <header class="page-header">
+            <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Games</div>
+            <h1>Game Server Hosting</h1>
+            <p>Ready-to-play servers with one-click installs, automatic crash detection, and instant scaling. Pick a title and be online in minutes.</p>
+            <div class="page-actions">
+                <a href="https://my.wavehost.org/products/games" class="btn btn-primary">Deploy a server <span>&rarr;</span></a>
+                <a href="#pricing" class="btn btn-ghost">View pricing</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- AVAILABLE GAMES -->
+    <section>
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Available Games</span>
+                <h2>Host the titles your community loves</h2>
+            </div>
+            <div class="games-grid">
+                <a class="game" href="https://my.wavehost.org/products/games">
+                    <div class="game-orb orb-minecraft"></div>
+                    <span class="game-name">Minecraft</span>
+                </a>
+                <a class="game" href="https://my.wavehost.org/products/games">
+                    <div class="game-orb orb-fivem"></div>
+                    <span class="game-name">FiveM</span>
+                </a>
+                <a class="game" href="https://my.wavehost.org/products/games">
+                    <div class="game-orb orb-gmod"></div>
+                    <span class="game-name">Garry's Mod</span>
+                </a>
+                <a class="game" href="https://my.wavehost.org/products/games">
+                    <div class="game-orb orb-ark"></div>
+                    <span class="game-name">ARK</span>
+                </a>
+                <a class="game" href="https://my.wavehost.org/products/games">
+                    <div class="game-orb orb-rust"></div>
+                    <span class="game-name">Rust</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY GAME HOSTING -->
+    <section style="padding-top:0;">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Built for gameplay</span>
+                <h2>Low latency, no babysitting</h2>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4M8 10v4"/><circle cx="16" cy="11" r="1"/><circle cx="18" cy="13" r="1"/><rect x="2" y="6" width="20" height="12" rx="4"/></svg>
+                    </div>
+                    <h3>One-Click Installs</h3>
+                    <p>Deploy Paper, Vanilla, Forge, Sponge, Bungeecord and full game modpacks straight from the panel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </div>
+                    <h3>Auto Crash Detection</h3>
+                    <p>If a server goes down, our panel detects it and restarts automatically to keep players connected.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg>
+                    </div>
+                    <h3>DDoS Protection</h3>
+                    <p>Every game server sits behind our advanced firewall, shielded from attacks around the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" style="padding-top:0;">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Game Pricing</span>
+                <h2>Fair pricing, ready to play</h2>
+                <p>More configurations & products are available in the billing panel.</p>
+            </div>
+            <div class="pricing" style="max-width:720px;">
+                <div class="pricing-card featured">
+                    <span class="badge">Most popular</span>
+                    <div class="pricing-title">Minecraft 1</div>
+                    <div class="pricing-price">$1.65<small>/mo</small></div>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 100% CPU</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 2GB RAM</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 2GB Disk</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Paper, Vanilla, Forge &amp; more</li>
+                    </ul>
+                    <a href="https://my.wavehost.org/products/minecraft-server" class="pricing-btn">Buy now</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-title">Gaming Basic</div>
+                    <div class="pricing-price">$5.00<small>/mo</small></div>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 200% CPU</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 6GB RAM</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 30GB Disk</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> FiveM, GMod, ARK, Rust ready</li>
+                    </ul>
+                    <a href="https://my.wavehost.org/products/games" class="pricing-btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-bottom" style="border-top:none;justify-content:center;">
+                <p>&copy; 2025 Wave Hosting &middot; <a href="index.html">Home</a> &middot; <a href="https://docs.wavehost.org/policies/policy-list">Policies &amp; Terms</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
